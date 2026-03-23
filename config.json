@@ -1,0 +1,45 @@
+{
+  "thresholds": {
+    "EAR_THRESHOLD": 0.25,
+    "MAR_THRESHOLD": 0.6,
+    "EAR_CONSEC_FRAMES": 20,
+    "YAWN_CONSEC_FRAMES": 15,
+    "DROWSY_TIME_SECONDS": 2.5,
+    "EMERGENCY_TIME_SECONDS": 12
+  },
+  "camera": {
+    "device_index": 0,
+    "frame_width": 1280,
+    "frame_height": 720,
+    "fps": 30
+  },
+  "alert": {
+    "alarm_sound_path": "assets/alarm.wav",
+    "use_mock_sms": true,
+    "alarm_volume": 0.9
+  },
+  "twilio": {
+    "account_sid": "YOUR_TWILIO_ACCOUNT_SID",
+    "auth_token": "YOUR_TWILIO_AUTH_TOKEN",
+    "from_number": "+1XXXXXXXXXX",
+    "to_number": "+1XXXXXXXXXX"
+  },
+  "location": {
+    "use_ip_geolocation": true,
+    "mock_latitude": 40.7128,
+    "mock_longitude": -74.0060,
+    "mock_city": "New York, NY"
+  },
+  "ui": {
+    "font_scale": 0.7,
+    "landmark_color_eyes": [0, 255, 0],
+    "landmark_color_mouth": [0, 165, 255],
+    "status_colors": {
+      "alert": [0, 255, 0],
+      "drowsy": [0, 165, 255],
+      "yawning": [0, 255, 255],
+      "emergency": [0, 0, 255],
+      "no_face": [128, 128, 128]
+    }
+  }
+}

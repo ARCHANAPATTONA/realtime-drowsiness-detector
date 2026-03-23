@@ -1,0 +1,18 @@
+# Driver Drowsiness Detection System
+# Python >= 3.9 recommended
+
+# Core vision
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Audio
+pygame>=2.5.0
+
+# Twilio SMS (optional — only needed for real SMS)
+twilio>=8.5.0
+
+# IP geolocation (built-in urllib used; no extra package needed)
